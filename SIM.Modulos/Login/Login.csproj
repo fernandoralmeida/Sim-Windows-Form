@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{53EA543D-9B71-4A00-8A8B-2D60DACA6240}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Login</RootNamespace>
+    <AssemblyName>Sim.Autenticacao</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Autenticado.cs" />
+    <Compile Include="Entidade\UserCollection.cs" />
+    <Compile Include="Entidade\Usuarios.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Negocios\Factories.cs" />
+    <Compile Include="Negocios\IUsuarios.cs" />
+    <Compile Include="Negocios\Usuarios.cs" />
+    <Compile Include="Visao\AcaoNaTela.cs" />
+    <Compile Include="Visao\FlexDataGridLogin.xaml.cs">
+      <DependentUpon>FlexDataGridLogin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\FmAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visao\FmAccounts.Designer.cs">
+      <DependentUpon>FmAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\FmLogIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visao\FmLogIN.Designer.cs">
+      <DependentUpon>FmLogIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\FmNewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visao\FmNewUser.Designer.cs">
+      <DependentUpon>FmNewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\FmUserProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visao\FmUserProfile.Designer.cs">
+      <DependentUpon>FmUserProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\ImputBox.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Sim.DataAccess\Sim.DataAccess.csproj">
+      <Project>{07ef3982-f1c5-4a28-94ec-410c672df3ac}</Project>
+      <Name>Sim.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sim.Themes\Sim.Gui.csproj">
+      <Project>{9653F717-4DCC-442D-892B-6147DFD7FE52}</Project>
+      <Name>Sim.Gui</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visao\FmAccounts.resx">
+      <DependentUpon>FmAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visao\FmLogIN.resx">
+      <DependentUpon>FmLogIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visao\FmNewUser.resx">
+      <DependentUpon>FmNewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visao\FmUserProfile.resx">
+      <DependentUpon>FmUserProfile.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\8271_128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Visao\FlexDataGridLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

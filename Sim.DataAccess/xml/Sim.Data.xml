@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Data>
+  <Conexao>
+    <Rede>|DataDirectory|\Data\</Rede>
+  </Conexao>
+  <DocLegislacao>
+    <PDF>http://leis.jau.sp.gov.br.</PDF>
+  </DocLegislacao>
+  <DocPortarias>
+    <PDF>\\192.168.1.243\Relacoes Institucionais\Portarias em PDF\</PDF>
+  </DocPortarias>
+</Data>

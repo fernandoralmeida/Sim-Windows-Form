@@ -1,0 +1,108 @@
+﻿
+    <UserControl x:Class="Sim.Legislacao.Visao.FlexDataGrid"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="307" Width="520">
+    <Grid>
+        <DataGrid x:Name="flexgrid" Margin="0,0,0,0" HeadersVisibility="Column" IsReadOnly="True" AutoGenerateColumns="False">           
+
+            <DataGrid.Columns>
+
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="-->"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                
+                <DataGridTextColumn Binding="{Binding Path=Tipo}" ClipboardContentBinding="{x:Null}" Header="Tipo" />
+                <DataGridTextColumn Binding="{Binding Path=Numero}" ClipboardContentBinding="{x:Null}" Header="Numero"/>
+                <DataGridTextColumn Binding="{Binding Path=Complemento}" ClipboardContentBinding="{x:Null}" Header="::"/>
+                <DataGridTextColumn Binding="{Binding Path=Data, StringFormat=yyyy}" ClipboardContentBinding="{x:Null}" Header="Ano" />
+
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock>
+                                <Hyperlink NavigateUri="{Binding Path=Link}" RequestNavigate="Hyperlink_RequestNavigate">PDF</Hyperlink>
+                            </TextBlock>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock>
+                                <Hyperlink NavigateUri="{Binding Path=IndiceLink}" RequestNavigate="Hyperlink_RequestNavigate_Edit">Editar</Hyperlink>
+                            </TextBlock>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                
+            </DataGrid.Columns>            
+            <DataGrid.RowDetailsTemplate>
+                <DataTemplate>
+                    <DockPanel>
+                        <Grid Margin="5,5,5,5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            
+                            <TextBlock Text="Situação:" Margin="1,1,1,1" Grid.Row="1"/>
+                            <TextBlock Text="{Binding Situacao}" Grid.Column="1" Grid.Row="1" Margin="1,1,1,1"/>
+                            <TextBlock Text="Autor:" Grid.Row="2" Margin="1,1,1,1"/>
+                            <TextBlock Text="{Binding Autor}" Grid.Column="1" Grid.Row="2" Margin="1,1,1,1" />
+                            <TextBlock Text="Resumo:" Grid.Row="3" Margin="1,1,1,1"/>
+                            <TextBlock Text="{Binding Resumo}" Grid.Column="1" Grid.Row="3" Margin="1,1,1,1"/>
+
+                            <DataGrid x:Name="ndgrid" Margin="1,5,1,5" ItemsSource="{Binding ListaAcoes}" Grid.Row="4" Grid.ColumnSpan="2" HeadersVisibility="None" BorderThickness="0"  GridLinesVisibility="None" IsReadOnly="True" AutoGenerateColumns="False">
+                                                              
+                                <DataGrid.Columns > 
+
+                                    <DataGridTextColumn Binding="{Binding Path=Acao}" ClipboardContentBinding="{x:Null}" Header="Ação"  />
+                                    <DataGridTextColumn Binding="{Binding Path=Tipo}" ClipboardContentBinding="{x:Null}" Header="Tipo" />
+                                    <DataGridTextColumn Binding="{Binding Path=Numero}" ClipboardContentBinding="{x:Null}" Header="Numero" />
+                                    <DataGridTextColumn Binding="{Binding Path=Complemento}" ClipboardContentBinding="{x:Null}" Header="::" />
+                                    <DataGridTextColumn Binding="{Binding Path=Data, StringFormat=yyyy}" ClipboardContentBinding="{x:Null}" Header="Ano" />
+                                    
+                                    <!--                                    
+                                    <DataGridTemplateColumn>
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock>
+                                                    <Hyperlink NavigateUri="{Binding Path=Link}" RequestNavigate="Hyperlink_RequestNavigate_1">PDF</Hyperlink>
+                                                </TextBlock>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    -->
+                                    
+                                </DataGrid.Columns>
+                                
+                            </DataGrid>
+                        </Grid>
+                    </DockPanel>
+                </DataTemplate>
+            </DataGrid.RowDetailsTemplate>
+        </DataGrid>
+
+    </Grid>
+
+</UserControl>
+    
+    
+    

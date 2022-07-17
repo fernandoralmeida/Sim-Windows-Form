@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Portarias>
+
+  <Tipo>
+    <Item>...</Item>
+    <Valor>0</Valor>
+  </Tipo>
+  <Tipo>
+    <Item>Comissões</Item>
+    <Valor>1</Valor>
+  </Tipo>
+  <Tipo>
+    <Item>Diversas</Item>
+    <Valor>2</Valor>
+  </Tipo>
+  <Tipo>
+    <Item>Estabilidade</Item>
+    <Valor>3</Valor>
+  </Tipo>
+  <Tipo>
+    <Item>Evolução Funcional</Item>
+    <Valor>4</Valor>
+  </Tipo>
+  <Tipo>
+    <Item>Exonerações Demissões</Item>
+    <Valor>5</Valor>
+  </Tipo>
+  <Tipo>
+    <Item>Licenças</Item>
+    <Valor>6</Valor>
+  </Tipo>
+  <Tipo>
+    <Item>Nomeações</Item>
+    <Valor>7</Valor>
+  </Tipo>
+  <Tipo>
+    <Item>Penalidades Suspenções</Item>
+    <Valor>8</Valor>
+  </Tipo>
+  <Tipo>
+    <Item>Retificadoras</Item>
+    <Valor>9</Valor>
+  </Tipo>
+  <Tipo>
+    <Item>Designações</Item>
+    <Valor>10</Valor>
+  </Tipo>
+  
+</Portarias>

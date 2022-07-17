@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<BaseDados>
+  
+  <TiposDoc>
+    <Item>...</Item>
+    <Valor>0</Valor>
+  </TiposDoc>
+  <TiposDoc>
+    <Item>LEI</Item>
+    <Valor>1</Valor>
+  </TiposDoc>
+  <TiposDoc>
+    <Item>LEI COMPLEMENTAR</Item>
+    <Valor>2</Valor>
+  </TiposDoc>
+  <TiposDoc>
+    <Item>DECRETO</Item>
+    <Valor>3</Valor>
+  </TiposDoc>
+  
+  <SituacaoAD>
+    <Item>...</Item>
+    <Valor>0</Valor>
+  </SituacaoAD>
+  <SituacaoAD>
+    <Item>Em Vigor</Item>
+    <Valor>1</Valor>
+    </SituacaoAD>
+  <SituacaoAD>
+    <Item>Alterada</Item>
+    <Valor>2</Valor>
+  </SituacaoAD>
+  <SituacaoAD>
+    <Item>Revogada</Item>
+    <Valor>3</Valor>
+  </SituacaoAD>
+  
+  <AcoesED>
+      <Item>...</Item>
+      <Valor>0</Valor>
+    </AcoesED>
+  <AcoesED>
+      <Item>Altera</Item>
+      <Valor>1</Valor>
+    </AcoesED>
+  <AcoesED>
+      <Item>Revoga</Item>
+      <Valor>2</Valor>
+    </AcoesED>
+  <AcoesED>
+      <Item>Regulamenta</Item>
+      <Valor>3</Valor>
+    </AcoesED>
+  
+  <OrigemDoc>
+      <Item>...</Item>
+      <Valor>0</Valor>
+    </OrigemDoc>
+  <OrigemDoc>
+      <Item>Executivo</Item>
+      <Valor>1</Valor>
+    </OrigemDoc>
+  <OrigemDoc>
+      <Item>Legislativo</Item>
+      <Valor>2</Valor>
+    </OrigemDoc>
+  
+  <AutorLegislativo>
+      <Item>...</Item>
+      <Valor>0</Valor>
+    </AutorLegislativo>
+  <AutorLegislativo>
+      <Item>Mesa Diretora</Item>
+      <Valor>1</Valor>
+    </AutorLegislativo>
+  <AutorLegislativo>
+      <Item>Vereador</Item>
+      <Valor>2</Valor>
+    </AutorLegislativo>
+
+  <DecretosClassificacao>
+    <Item>...</Item>
+    <Valor>0</Valor>
+  </DecretosClassificacao>
+  <DecretosClassificacao>
+      <Item>Administrativo</Item>
+      <Valor>1</Valor>
+    </DecretosClassificacao>
+  <DecretosClassificacao>
+      <Item>Aprovações Diversas</Item>
+      <Valor>2</Valor>
+    </DecretosClassificacao>
+  <DecretosClassificacao>
+      <Item>Auxílios / Subvenções / Pensões / Doações</Item>
+      <Valor>3</Valor>
+    </DecretosClassificacao>
+  <DecretosClassificacao>
+      <Item>Calamidade Pública</Item>
+      <Valor>4</Valor>
+    </DecretosClassificacao>
+  <DecretosClassificacao>
+      <Item>Comissões</Item>
+      <Valor>5</Valor>
+    </DecretosClassificacao>
+  <DecretosClassificacao>
+      <Item>Comunicações</Item>
+      <Valor>6</Valor>
+    </DecretosClassificacao>
+  <DecretosClassificacao>
+      <Item>Cultura / Turismo / Esportes</Item>
+      <Valor>7</Valor>
+    </DecretosClassificacao>
+  <DecretosClassificacao>
+      <Item>Desapropriações</Item>
+      <Valor>8</Valor>
+    </DecretosClassificacao>
+  <DecretosClassificacao>
+      <Item>Datas Festivas / Comemorativas</Item>
+      <Valor>9</Valor>
+    </DecretosClassificacao>
+  <DecretosClassificacao>
+      <Item>Escolas</Item>
+      <Valor>10</Valor>
+    </DecretosClassificacao>
+  <DecretosClassificacao>
+      <Item>Hóspedes Oficiais</Item>
+      <Valor>11</Valor>
+    </DecretosClassificacao>
+  <DecretosClassificacao>
+      <Item>I.P.M.J.</Item>
+      <Valor>12</Valor>
+    </DecretosClassificacao>
+  <DecretosClassificacao>
+      <Item>Luto Oficial</Item>
+      <Valor>13</Valor>
+    </DecretosClassificacao>
+  <DecretosClassificacao>
+      <Item>Perímetro Urbano</Item>
+      <Valor>14</Valor>
+    </DecretosClassificacao>
+  <DecretosClassificacao>
+      <Item>Ponto Facultativo / Horário da P.M.</Item>
+      <Valor>15</Valor>
+    </DecretosClassificacao>
+  <DecretosClassificacao>
+      <Item>Posturas Municipais</Item>
+      <Valor>16</Valor>
+    </DecretosClassificacao>
+  <DecretosClassificacao>
+      <Item>Preços / Tarifas</Item>
+      <Valor>17</Valor>
+    </DecretosClassificacao>
+  <DecretosClassificacao>
+      <Item>Regulamentação / Criação</Item>
+      <Valor>18</Valor>
+    </DecretosClassificacao>
+  <DecretosClassificacao>
+      <Item>Servidores Ingresso / Egresso / Alteração</Item>
+      <Valor>19</Valor>
+    </DecretosClassificacao>
+  <DecretosClassificacao>
+      <Item>Títulos Honrarias</Item>
+      <Valor>20</Valor>
+    </DecretosClassificacao>
+  <DecretosClassificacao>
+      <Item>Tributos</Item>
+      <Valor>21</Valor>
+    </DecretosClassificacao>
+  <DecretosClassificacao>
+      <Item>Vencimentos / Salários / Proventos</Item>
+      <Valor>22</Valor>
+    </DecretosClassificacao>
+  <DecretosClassificacao>
+      <Item>Verbas - Suplementa / Altera / Orçamento</Item>
+      <Valor>23</Valor>
+    </DecretosClassificacao>
+<DecretosClassificacao>
+      <Item>DENOMINAÇÕES</Item>
+      <Valor>24</Valor>
+    </DecretosClassificacao>
+<DecretosClassificacao>
+      <Item>CAMARA</Item>
+      <Valor>25</Valor>
+    </DecretosClassificacao>
+  
+  <LeisClassificacao>
+      <Item>...</Item>
+      <Valor>0</Valor>      
+    </LeisClassificacao>
+  <LeisClassificacao>
+      <Item>Aprovações Diversas</Item>
+      <Valor>1</Valor>
+    </LeisClassificacao>
+  <LeisClassificacao>
+      <Item>Aumento de Tarifas</Item>
+      <Valor>2</Valor>
+    </LeisClassificacao>
+  <LeisClassificacao>
+      <Item>Aumento de Vencimentos</Item>
+      <Valor>3</Valor>
+    </LeisClassificacao>
+  <LeisClassificacao>
+      <Item>Autorizações Diversas</Item>
+      <Valor>4</Valor>
+    </LeisClassificacao>
+  <LeisClassificacao>
+      <Item>Auxílios / Subvenções / Pensões / Doações</Item>
+      <Valor>5</Valor>
+    </LeisClassificacao>
+  <LeisClassificacao>
+      <Item>Bolsas de Estudos / Auxílios Transportes</Item>
+      <Valor>6</Valor>
+    </LeisClassificacao>
+  <LeisClassificacao>
+      <Item>Convênio / Contratos / Concessões</Item>
+      <Valor>7</Valor>
+    </LeisClassificacao>
+  <LeisClassificacao>
+      <Item>Crédito Especial / Suplementação / Adicional / Orçamento</Item>
+      <Valor>8</Valor>
+    </LeisClassificacao>
+  <LeisClassificacao>
+      <Item>Criações / Instituições</Item>
+      <Valor>9</Valor>
+    </LeisClassificacao>
+  <LeisClassificacao>
+      <Item>Cultura</Item>
+      <Valor>10</Valor>
+    </LeisClassificacao>
+  <LeisClassificacao>
+      <Item>Datas Festivas / Comemorativas</Item>
+      <Valor>11</Valor>
+    </LeisClassificacao>
+  <LeisClassificacao>
+      <Item>Desapropriações</Item>
+      <Valor>12</Valor>
+    </LeisClassificacao>
+  <LeisClassificacao>
+      <Item>Escolas</Item>
+      <Valor>13</Valor>
+    </LeisClassificacao>
+  <LeisClassificacao>
+      <Item>Feriados</Item>
+      <Valor>14</Valor>
+    </LeisClassificacao>
+  <LeisClassificacao>
+      <Item>Funcionamento Indústrias Comércios e Serviços</Item>
+      <Valor>15</Valor>
+    </LeisClassificacao>
+  <LeisClassificacao>
+      <Item>Imóveis - Compra / Venda / Doação / Permuta / Cessão</Item>
+      <Valor>16</Valor>
+    </LeisClassificacao>
+  <LeisClassificacao>
+      <Item>Impostos / Tributos</Item>
+      <Valor>17</Valor>
+    </LeisClassificacao>
+  <LeisClassificacao>
+      <Item>Isenção de Tributos</Item>
+      <Valor>18</Valor>
+    </LeisClassificacao>
+  <LeisClassificacao>
+      <Item>Normas Internas - Prefeitura Municipal</Item>
+      <Valor>19</Valor>
+    </LeisClassificacao>
+  <LeisClassificacao>
+      <Item>Obras Particulares</Item>
+      <Valor>20</Valor>
+    </LeisClassificacao>
+  <LeisClassificacao>
+      <Item>Perímetro Urbano / Limites / Zonas</Item>
+      <Valor>21</Valor>
+    </LeisClassificacao>
+  <LeisClassificacao>
+      <Item>Posturas Municipais</Item>
+      <Valor>22</Valor>
+    </LeisClassificacao>
+  <LeisClassificacao>
+      <Item>Servidores Municipais</Item>
+      <Valor>23</Valor>
+    </LeisClassificacao>
+  <LeisClassificacao>
+      <Item>Preços / Tarifas / Emolumentos</Item>
+      <Valor>24</Valor>
+    </LeisClassificacao>
+  <LeisClassificacao>
+      <Item>Títulos / Honrarias</Item>
+      <Valor>25</Valor>
+    </LeisClassificacao>
+  <LeisClassificacao>
+      <Item>Trânsito</Item>
+      <Valor>26</Valor>
+    </LeisClassificacao>
+  <LeisClassificacao>
+      <Item>Utilidade Pública</Item>
+      <Valor>27</Valor>
+    </LeisClassificacao>
+<LeisClassificacao>
+      <Item>Denominações</Item>
+      <Valor>28</Valor>
+    </LeisClassificacao>
+<LeisClassificacao>
+      <Item>Câmara Municipal</Item>
+      <Valor>29</Valor>
+    </LeisClassificacao>
+
+  <Limpar>
+    <Item>...</Item>
+    <Valor>0</Valor>
+  </Limpar>
+
+</BaseDados>

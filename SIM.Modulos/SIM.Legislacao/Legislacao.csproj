@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE423A05-ACE5-44D5-939F-DF513FBA009D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sim.Legislacao</RootNamespace>
+    <AssemblyName>Sim.Legislacao</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entidades\Acoes.cs" />
+    <Compile Include="Entidades\ListaAcoes.cs" />
+    <Compile Include="Entidades\ListaLegislacao.cs" />
+    <Compile Include="Entidades\Legislacao.cs" />
+    <Compile Include="Entidades\ListaViewAcoes.cs" />
+    <Compile Include="Entidades\ViewAcoes.cs" />
+    <Compile Include="Instancia.cs" />
+    <Compile Include="Modulo.cs" />
+    <Compile Include="Negocios\Handles.cs" />
+    <Compile Include="Negocios\IRelatorios.cs" />
+    <Compile Include="Negocios\Link.cs" />
+    <Compile Include="Negocios\PrintRel.cs" />
+    <Compile Include="Negocios\Relatorios.cs" />
+    <Compile Include="Visao\FlexDataGridLeg.xaml.cs">
+      <DependentUpon>FlexDataGridLeg.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Negocios\IRegras.cs" />
+    <Compile Include="Negocios\Regras.cs" />
+    <Compile Include="Negocios\TipoAcoes.cs" />
+    <Compile Include="Negocios\TipoConsulta.cs" />
+    <Compile Include="Negocios\TipoSituacoes.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ucMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucMenu.Designer.cs">
+      <DependentUpon>ucMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\FmConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visao\FmConsulta.Designer.cs">
+      <DependentUpon>FmConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\FmIncluir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visao\FmIncluir.Designer.cs">
+      <DependentUpon>FmIncluir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\FmRelatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visao\FmRelatorio.Designer.cs">
+      <DependentUpon>FmRelatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\FormPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visao\FormPrint.Designer.cs">
+      <DependentUpon>FormPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\Tela.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucMenu.resx">
+      <DependentUpon>ucMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visao\FmConsulta.resx">
+      <DependentUpon>FmConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visao\FmIncluir.resx">
+      <DependentUpon>FmIncluir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visao\FmRelatorio.resx">
+      <DependentUpon>FmRelatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visao\FormPrint.resx">
+      <DependentUpon>FormPrint.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\PdfSharp\PdfSharp.csproj">
+      <Project>{5384CE57-1F94-4D22-860D-2E9C1AC12DDF}</Project>
+      <Name>PdfSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sim.App\Sim.App.csproj">
+      <Project>{faaad624-48ea-47f0-b08a-6e7eb5742ac6}</Project>
+      <Name>Sim.App</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sim.DataAccess\Sim.DataAccess.csproj">
+      <Project>{07ef3982-f1c5-4a28-94ec-410c672df3ac}</Project>
+      <Name>Sim.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sim.Pdf\Sim.Pdf.csproj">
+      <Project>{8c214300-e120-422c-9e01-183b8565419f}</Project>
+      <Name>Sim.Pdf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sim.Themes\Sim.Gui.csproj">
+      <Project>{9653f717-4dcc-442d-892b-6147dfd7fe52}</Project>
+      <Name>Sim.Gui</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Login\Login.csproj">
+      <Project>{53ea543d-9b71-4a00-8a8b-2d60daca6240}</Project>
+      <Name>Login</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Img\loading.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\Legislacao.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Page Include="Visao\FlexDataGridLeg.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

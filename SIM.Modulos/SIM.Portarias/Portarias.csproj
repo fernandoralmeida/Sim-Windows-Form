@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{195DCE57-9148-4AE3-A397-8B9227BB9FE0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sim.Portarias</RootNamespace>
+    <AssemblyName>Sim.Portarias</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entidade\ColecaoPortarias.cs" />
+    <Compile Include="Entidade\ListViewPortarias.cs" />
+    <Compile Include="Entidade\ListViewServidores.cs" />
+    <Compile Include="Entidade\ViewPortarias.cs" />
+    <Compile Include="Entidade\ViewServidores.cs" />
+    <Compile Include="Modulo.cs" />
+    <Compile Include="Entidade\Portarias.cs" />
+    <Compile Include="Negocios\Handles.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Negocios\BllPortarias.cs" />
+    <Compile Include="Negocios\IBllPortarias.cs" />
+    <Compile Include="Negocios\Factories.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ucMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucMenu.Designer.cs">
+      <DependentUpon>ucMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\DataGridPortarias.xaml.cs">
+      <DependentUpon>DataGridPortarias.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\FmConsultar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visao\FmConsultar.Designer.cs">
+      <DependentUpon>FmConsultar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\FmEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visao\FmEditar.Designer.cs">
+      <DependentUpon>FmEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\FmIncluir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visao\FmIncluir.Designer.cs">
+      <DependentUpon>FmIncluir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\FmRel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visao\FmRel.Designer.cs">
+      <DependentUpon>FmRel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\TelaModo.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucMenu.resx">
+      <DependentUpon>ucMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visao\FmConsultar.resx">
+      <DependentUpon>FmConsultar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visao\FmEditar.resx">
+      <DependentUpon>FmEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visao\FmIncluir.resx">
+      <DependentUpon>FmIncluir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visao\FmRel.resx">
+      <DependentUpon>FmRel.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Sim.App\Sim.App.csproj">
+      <Project>{faaad624-48ea-47f0-b08a-6e7eb5742ac6}</Project>
+      <Name>Sim.App</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sim.DataAccess\Sim.DataAccess.csproj">
+      <Project>{07ef3982-f1c5-4a28-94ec-410c672df3ac}</Project>
+      <Name>Sim.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sim.Pdf\Sim.Pdf.csproj">
+      <Project>{8c214300-e120-422c-9e01-183b8565419f}</Project>
+      <Name>Sim.Pdf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sim.Themes\Sim.Gui.csproj">
+      <Project>{9653f717-4dcc-442d-892b-6147dfd7fe52}</Project>
+      <Name>Sim.Gui</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Login\Login.csproj">
+      <Project>{53ea543d-9b71-4a00-8a8b-2d60daca6240}</Project>
+      <Name>Login</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Xml\Portaria.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.4.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 4.0 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Visao\DataGridPortarias.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

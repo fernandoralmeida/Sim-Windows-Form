@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B1F3BF27-B9D6-4D25-8B64-D59EC3412ACD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sim.Componentes</RootNamespace>
+    <AssemblyName>Sim.Componentes</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PDFLibNet">
+      <HintPath>Formularios\PDFView\PDFlibNET\PDFLibNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Aero.cs" />
+    <Compile Include="Classes\AppMonitoring.cs" />
+    <Compile Include="Classes\AreaTrabalho.cs" />
+    <Compile Include="Classes\Arquivos.cs" />
+    <Compile Include="Classes\Colors.cs" />
+    <Compile Include="Classes\ColorTheme.cs" />
+    <Compile Include="Classes\Console.cs" />
+    <Compile Include="Classes\Criptografia.cs" />
+    <Compile Include="Classes\DataGridHelper.cs" />
+    <Compile Include="Classes\DataView.cs" />
+    <Compile Include="Classes\Diretorios.cs" />
+    <Compile Include="Classes\Formularios.cs" />
+    <Compile Include="Classes\FormulariosFilhos.cs" />
+    <Compile Include="Classes\MaskedProvider.cs" />
+    <Compile Include="Classes\Modulos.cs" />
+    <Compile Include="Classes\MoveForm.cs" />
+    <Compile Include="Classes\OwnedForms.cs" />
+    <Compile Include="Classes\RawPrinterHelper.cs" />
+    <Compile Include="Classes\Transportar.cs" />
+    <Compile Include="Classes\Validar.cs" />
+    <Compile Include="Classes\Xml.cs" />
+    <Compile Include="Classes\XmlFile.cs" />
+    <Compile Include="Controles\cButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\cButton.Designer.cs">
+      <DependentUpon>cButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\cButtonColor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\cButtonColor.Designer.cs">
+      <DependentUpon>cButtonColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\cButtonImage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\cButtonImage.designer.cs">
+      <DependentUpon>cButtonImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\cButtonWindows.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\cButtonWindows.designer.cs">
+      <DependentUpon>cButtonWindows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\cComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\cComboBox.Designer.cs">
+      <DependentUpon>cComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\cDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\cDataGridView.Designer.cs">
+      <DependentUpon>cDataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\cGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\cGroupBox.Designer.cs">
+      <DependentUpon>cGroupBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\cLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\cLabel.Designer.cs">
+      <DependentUpon>cLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\cLabelTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\cLabelTextBox.Designer.cs">
+      <DependentUpon>cLabelTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\cPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\cPanel.Designer.cs">
+      <DependentUpon>cPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\cProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\cProgressBar.designer.cs">
+      <DependentUpon>cProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\cRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\cRadioButton.designer.cs">
+      <DependentUpon>cRadioButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Dialog.cs" />
+    <Compile Include="Controles\Limpar.cs" />
+    <Compile Include="Controles\mskTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\mskTextBox.Designer.cs">
+      <DependentUpon>mskTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\cForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\cForm.Designer.cs">
+      <DependentUpon>cForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormOutPut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormOutPut.Designer.cs">
+      <DependentUpon>FormOutPut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormPDF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormPDF.Designer.cs">
+      <DependentUpon>FormPDF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\newFormPDF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\newFormPDF.Designer.cs">
+      <DependentUpon>newFormPDF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\PDFView\cPDFView\GDI.cs" />
+    <Compile Include="Formularios\PDFView\cPDFView\HexEncoding.cs" />
+    <Compile Include="Formularios\PDFView\cPDFView\PageViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\PDFView\cPDFView\PageViewer.Designer.cs">
+      <DependentUpon>PageViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\PDFView\cPDFView\PDFViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\PDFView\cPDFView\PDFViewer.Designer.cs">
+      <DependentUpon>PDFViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\PDFView\UserActivityMonitor\GlobalEventProvider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Formularios\PDFView\UserActivityMonitor\HookManager.Callbacks.cs" />
+    <Compile Include="Formularios\PDFView\UserActivityMonitor\HookManager.cs" />
+    <Compile Include="Formularios\PDFView\UserActivityMonitor\HookManager.Structures.cs" />
+    <Compile Include="Formularios\PDFView\UserActivityMonitor\HookManager.Windows.cs" />
+    <Compile Include="Formularios\PDFView\UserActivityMonitor\MouseEventExtArgs.cs" />
+    <Compile Include="Formularios\xForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\xForm.Designer.cs">
+      <DependentUpon>xForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\xFormChild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\xFormChild.Designer.cs">
+      <DependentUpon>xFormChild.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controles\cButtonWindows.resx">
+      <DependentUpon>cButtonWindows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\cComboBox.resx">
+      <DependentUpon>cComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\cLabelTextBox.resx">
+      <DependentUpon>cLabelTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\mskTextBox.resx">
+      <DependentUpon>mskTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\cForm.resx">
+      <DependentUpon>cForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormOutPut.resx">
+      <DependentUpon>FormOutPut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormPDF.resx">
+      <DependentUpon>FormPDF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\newFormPDF.resx">
+      <DependentUpon>newFormPDF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PDFView\cPDFView\PageViewer.resx">
+      <DependentUpon>PageViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PDFView\cPDFView\PDFViewer.resx">
+      <DependentUpon>PDFViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\xForm.resx">
+      <DependentUpon>xForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\xFormChild.resx">
+      <DependentUpon>xFormChild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\end.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\max.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\max_black.png" />
+    <None Include="Resources\min_black.png" />
+    <None Include="Resources\res_black.png" />
+    <None Include="Resources\SIM.Gloss.png" />
+    <None Include="Resources\SIM.Icones.Edit.png" />
+    <None Include="Resources\SIM.Icones.Info.png" />
+    <None Include="Resources\SIM.Icones.Lock.png" />
+    <None Include="Resources\SIM.Icones.Plus.png" />
+    <None Include="Resources\SIM.Icones.Search.png" />
+    <None Include="Resources\SIM.Icones.User.png" />
+    <None Include="Resources\end_black.png" />
+    <Content Include="Formularios\PDFView\PDFlibNET\PDFLibNet.dll" />
+    <Content Include="Resources\tshadowdown.png" />
+    <Content Include="Resources\tshadowdownleft.png" />
+    <Content Include="Resources\tshadowdownright.png" />
+    <Content Include="Resources\tshadowright.png" />
+    <Content Include="Resources\tshadowtopright.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PdfSharp\PdfSharp.csproj">
+      <Project>{5384ce57-1f94-4d22-860d-2e9c1ac12ddf}</Project>
+      <Name>PdfSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sim.Themes\Sim.Gui.csproj">
+      <Project>{9653f717-4dcc-442d-892b-6147dfd7fe52}</Project>
+      <Name>Sim.Gui</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

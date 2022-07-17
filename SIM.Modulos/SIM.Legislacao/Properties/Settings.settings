@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Sim.Legislacao.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="viaWEB" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://leis.jau.sp.gov.br</Value>
+    </Setting>
+    <Setting Name="viaHD" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\192.168.1.243\Relacoes Institucionais\Leis e Decretos em PDF</Value>
+    </Setting>
+    <Setting Name="ConsultaSimples" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ConsultaDetalhada" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
